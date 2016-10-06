@@ -1,0 +1,11 @@
+# Items
+item.PickGod.name=God Pick
+item.hammer.name=Hammer
+item.itemid.name=Item Name
+
+# Blocks
+tile.pimp.name=Pimp Block
+tle.blockid.name=Block Nams
+
+#mod title
+itemGroup.mod1st=First Mod
