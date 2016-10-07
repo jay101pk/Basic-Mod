@@ -1,99 +1,38 @@
-[13:47:38] [Client thread/INFO]: Setting user: Player618
-[13:47:42] [Client thread/WARN]: Skipping bad option: lastServer:
-[13:47:42] [Client thread/INFO]: LWJGL Version: 2.9.4
-[13:47:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mod1st
-[13:47:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:47:51] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[13:47:51] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:47:52] [Thread-8/INFO]: OpenAL initialized.
-[13:47:52] [Sound Library Loader/INFO]: Sound engine started
-[13:47:56] [Client thread/INFO]: Created: 16x16 textures-atlas
-[13:47:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mod1st
-[13:48:01] [Client thread/INFO]: SoundSystem shutting down...
-[13:48:01] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[13:48:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:48:01] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[13:48:01] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:48:01] [Thread-10/INFO]: OpenAL initialized.
-[13:48:02] [Sound Library Loader/INFO]: Sound engine started
-[13:48:06] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[13:48:06] [Client thread/WARN]: Skipping bad option: lastServer:
-[13:48:07] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[13:50:01] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
-[13:50:01] [Server thread/INFO]: Generating keypair
-[13:50:01] [Server thread/INFO]: Preparing start region for level 0
-[13:50:02] [Server thread/INFO]: Preparing spawn area: 56%
-[13:50:03] [Server thread/INFO]: Changing view distance to 12, from 10
-[13:50:14] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@1a1533af[id=9558103d-7825-31db-a05b-a05b47d33b95,name=Player618,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:168) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.launchIntegratedServer(Minecraft.java:2450) [Minecraft.class:?]
-	at net.minecraftforge.fml.client.FMLClientHandler.tryLoadExistingWorld(FMLClientHandler.java:723) [FMLClientHandler.class:?]
-	at net.minecraft.client.gui.GuiListWorldSelectionEntry.loadWorld(GuiListWorldSelectionEntry.java:249) [GuiListWorldSelectionEntry.class:?]
-	at net.minecraft.client.gui.GuiListWorldSelectionEntry.joinWorld(GuiListWorldSelectionEntry.java:203) [GuiListWorldSelectionEntry.class:?]
-	at net.minecraft.client.gui.GuiListWorldSelectionEntry.mousePressed(GuiListWorldSelectionEntry.java:167) [GuiListWorldSelectionEntry.class:?]
-	at net.minecraft.client.gui.GuiListExtended.mouseClicked(GuiListExtended.java:57) [GuiListExtended.class:?]
-	at net.minecraft.client.gui.GuiWorldSelection.mouseClicked(GuiWorldSelection.java:134) [GuiWorldSelection.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:617) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiWorldSelection.handleMouseInput(GuiWorldSelection.java:49) [GuiWorldSelection.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:583) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1797) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1118) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:406) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:26) [start/:?]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_101]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 28 more
-[13:50:14] [Server thread/INFO]: Player618[local:E:7b180a70] logged in with entity id 240 at (0.5, 58.0, 0.5)
-[13:50:15] [Server thread/INFO]: Player618 joined the game
-[13:50:16] [Server thread/INFO]: Saving and pausing game...
-[13:50:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:50:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:50:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:50:16] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4c5c62b0[id=9558103d-7825-31db-a05b-a05b47d33b95,name=Player618,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+[18:58:00] [Client thread/INFO]: Setting user: Player326
+[18:58:03] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:58:03] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:58:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mod1st
+[18:58:10] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:58:10] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:58:10] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:58:11] [Thread-8/INFO]: OpenAL initialized.
+[18:58:11] [Sound Library Loader/INFO]: Sound engine started
+[18:58:16] [Client thread/INFO]: Created: 16x16 textures-atlas
+[18:58:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mod1st
+[18:58:20] [Client thread/INFO]: SoundSystem shutting down...
+[18:58:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:58:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:58:21] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[18:58:21] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:58:21] [Thread-10/INFO]: OpenAL initialized.
+[18:58:21] [Sound Library Loader/INFO]: Sound engine started
+[18:58:25] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:58:26] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:58:27] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[18:58:42] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
+[18:58:42] [Server thread/INFO]: Generating keypair
+[18:58:43] [Server thread/INFO]: Preparing start region for level 0
+[18:58:44] [Server thread/INFO]: Preparing spawn area: 48%
+[18:58:44] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:58:45] [Server thread/INFO]: Player326[local:E:38b2e979] logged in with entity id 241 at (0.49856466823257506, 57.0, 2.300000011920929)
+[18:58:45] [Server thread/INFO]: Player326 joined the game
+[18:58:47] [Server thread/INFO]: Saving and pausing game...
+[18:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:58:47] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@27c6d7c[id=bbd99455-8401-3d8f-8354-38be4a4ffba2,name=Player326,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
@@ -113,38 +52,8 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_101]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_101]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_101]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_101]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 19 more
-[13:50:20] [Server thread/INFO]: Player618 has just earned the achievement [Taking Inventory]
-[13:50:20] [Client thread/WARN]: Failed to load texture: minecraft:textures/models/armor/Obsidian_layer_1.png
+[18:58:52] [Server thread/INFO]: Player326 has just earned the achievement [Taking Inventory]
+[18:58:52] [Client thread/WARN]: Failed to load texture: minecraft:textures/models/armor/Obsidian_layer_1.png
 java.io.FileNotFoundException: minecraft:textures/models/armor/Obsidian_layer_1.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:68) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
@@ -181,17 +90,21 @@ java.io.FileNotFoundException: minecraft:textures/models/armor/Obsidian_layer_1.
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:26) [start/:?]
-[13:50:20] [Client thread/INFO]: [CHAT] Player618 has just earned the achievement [Taking Inventory]
-[13:50:35] [Server thread/INFO]: Saving and pausing game...
-[13:50:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:50:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:50:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:50:36] [Server thread/INFO]: Stopping server
-[13:50:36] [Server thread/INFO]: Saving players
-[13:50:36] [Server thread/INFO]: Saving worlds
-[13:50:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:50:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:50:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:50:38] [Client thread/INFO]: Stopping!
-[13:50:38] [Client thread/INFO]: SoundSystem shutting down...
-[13:50:38] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:58:52] [Client thread/INFO]: [CHAT] Player326 has just earned the achievement [Taking Inventory]
+[18:58:57] [Server thread/INFO]: Saving and pausing game...
+[18:58:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:58:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:58:58] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:59:01] [Server thread/INFO]: Saving and pausing game...
+[18:59:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:59:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:59:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:59:02] [Server thread/INFO]: Stopping server
+[18:59:02] [Server thread/INFO]: Saving players
+[18:59:02] [Server thread/INFO]: Saving worlds
+[18:59:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:59:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:59:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:59:04] [Client thread/INFO]: Stopping!
+[18:59:04] [Client thread/INFO]: SoundSystem shutting down...
+[18:59:05] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
